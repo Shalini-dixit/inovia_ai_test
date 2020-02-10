@@ -20,11 +20,9 @@ Liquibase 3.6.2
 In memory H2 DB
 
 <b>Test-cases :</b>\
-<b>DAO</b>\
+
 com.inovia.assignment.dao.EmployeeDAOTest 
-<b>Service</b>\
 com.inovia.assignment.service.EmployeeServiceTest
-<b>Rest</b>\
 com.inovia.assignment.rest.EmployeeControllerTest
 
 
