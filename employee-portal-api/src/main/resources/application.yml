@@ -1,0 +1,63 @@
+spring:
+  profiles: local
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: ''
+    platform: h2
+    url: jdbc:h2:mem:testdb;MODE=Oracle;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: ''
+        format_sql: true
+        generate_statistics: false
+    show-sql: true
+
+  liquibase:
+    change-log: classpath:/changelog/changelog-master.xml
+
+
+
+server:
+  port: 9090
+
+
+---
+# Production Or Other Profile properties.
+#  these settings can be changed according for prod environment. as of now using same as local profile.
+spring:
+  profiles: prod
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: ''
+    platform: h2
+    url: jdbc:h2:mem:testdb;MODE=Oracle;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: ''
+        format_sql: true
+        generate_statistics: false
+    show-sql: true
+
+  liquibase:
+    change-log: classpath:/changes1/changelog-master.xml
+
+
+server:
+  port: 9090
+

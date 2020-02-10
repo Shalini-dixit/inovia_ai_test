@@ -1,0 +1,17 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+    <changeSet id="test" author="shalini" context="local,test">
+        <sql>
+            <![CDATA[
+                CREATE TABLE EMPLOYEE_DETAILS (
+                  id INT AUTO_INCREMENT  PRIMARY KEY,
+                  name VARCHAR(250) NOT NULL,
+                  salary INT NOT NULL,
+                  hire_date DATE NOT NULL
+                );
+            ]]>
+        </sql>
+
+    </changeSet>
+</databaseChangeLog>

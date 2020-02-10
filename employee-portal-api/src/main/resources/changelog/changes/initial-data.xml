@@ -1,0 +1,20 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+    <changeSet id="initialdata" author="shalini" context="local,prod">
+        <sql><![CDATA[
+               INSERT INTO
+                    EMPLOYEE_DETAILS (name, salary, hire_date)
+                VALUES
+                    ('John', 9000, '2019-07-31'),
+                    ('Mike', 8000, '2018-07-31'),
+                    ('Adam', 10000, '2017-07-31'),
+                    ('Lisa', 6000, '2019-06-30'),
+                    ('Alice', 4000, '2018-06-30'),
+                    ('Alexender', 11000, '2017-06-30'),
+                    ('Lina', 19000, '2019-07-28'),
+                    ('Johana', 28000, '2018-07-27');
+             ]]>
+        </sql>
+    </changeSet>
+</databaseChangeLog>
