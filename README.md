@@ -12,6 +12,13 @@ The is an application with basic features like :
 1. employee-portal-api (Spring boot rest api)
 2. API doc generated via swagger)
 
+<b>Profile</b>
+
+1. local :- For running application locally. You can add command line arument as "local" for running this application.
+   If no profile is defined,Application will run default on local profile.h2 DB is used for local application
+  
+2. for Producation, -Dspring.profiles.active=prod need to  be defined and corresponding application.yml prod part can be updated.
+
 <b>Tech-stack :</b>
 
 JAVA 11
