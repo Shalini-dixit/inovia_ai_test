@@ -19,11 +19,11 @@ Spring Boot 2.2.4
 Liquibase 3.6.2
 In memory H2 DB
 
-<b>Test-cases :</b>\
+<b>Test-cases :</b> 
 
-com.inovia.assignment.dao.EmployeeDAOTest 
-com.inovia.assignment.service.EmployeeServiceTest
-com.inovia.assignment.rest.EmployeeControllerTest
+1. com.inovia.assignment.dao.EmployeeDAOTest 
+2. com.inovia.assignment.service.EmployeeServiceTest 
+3. com.inovia.assignment.rest.EmployeeControllerTest
 
 
 <b>Getting Started</b>
